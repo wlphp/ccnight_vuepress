@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:vuepress.github.io)",
+      "Bash(cmd:*)",
+      "Bash(powershell.exe:*)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
