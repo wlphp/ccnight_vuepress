@@ -45,6 +45,11 @@ WindowsMacOSLinux
 
 ## [ Claude Code配置]
 
+```
+# Claude Code (Native install - recommended)
+curl -fsSL https://claude.ai/install.sh | bash
+```
+
 1. 打开你下载的CC Switch软件，你会看到如下图的初始界面
 
    根据图片提示把请求地址和api key写好

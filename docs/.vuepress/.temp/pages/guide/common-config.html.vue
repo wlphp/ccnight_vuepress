@@ -36,7 +36,10 @@
 如果你有经验，能确认你的Nodejs环境以及cc、codex、gemini的cli安装没问题，配置目录也都存在，可以忽略这一步，直接进入以下的CC Switch配置</strong></p>
 <p>点击右侧传送门查看 <a href="">如何进行环境检查？</a></p>
 <h2 id="claude-code配置" tabindex="-1"><a class="header-anchor" href="#claude-code配置"><span>[ Claude Code配置]</span></a></h2>
-<ol>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line"># Claude Code (Native install - recommended)</span>
+<span class="line">curl -fsSL https://claude.ai/install.sh | bash</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ol>
 <li>
 <p>打开你下载的CC Switch软件，你会看到如下图的初始界面</p>
 <p>根据图片提示把请求地址和api key写好</p>
