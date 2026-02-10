@@ -1,5 +1,5 @@
 @echo off
-echo 正在打包项目...
+echo Building...
 npm run docs:build
-echo 打包完成！
+echo Build done!
 pause

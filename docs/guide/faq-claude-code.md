@@ -20,24 +20,27 @@ Note: Claude Code might not be available in your country, Check supported countr
 
 或是在你初次配置时出现以下问题：
 
-![img](faq-claude-code.assets/QQ_1770619595841.png)
+![img](faq-claude-code.assets/QQ_1770692034418.png)
 
-WindowsMacOS
+   Windows或者mac：
 
-1. 按下键盘 `Win + R` 键，输入 `cmd` 后回车，打开命令行程序
-2. 在命令行中运行以下命令后回车
+1. 使用cc-swith配置
 
+   ![img](faq-claude-code.assets/QQ_1770692125874.png)
 
+   开启这个开关之后他也是帮你在.claude.json`中 "hasCompletedOnboarding": true 处理的这个。
 
-```bash
-powershell -Command "$f='%USERPROFILE%\.claude.json';$j=Get-Content $f|ConvertFrom-Json;$j|Add-Member -NotePropertyName 'hasCompletedOnboarding' -NotePropertyValue $true -Force;$j|ConvertTo-Json|Set-Content $f"
-```
-
-或者：
+2. 或者：
 
 找到配置文件：`C:\Users\你的用户名\.claude.json`
 
 把里面的 `hasCompletedOnboarding` 改成 `true` 即可：
+
+如果没有这个的话，那么需要你手动新增一行。在下图位置
+
+
+
+![img](faq-claude-code.assets/QQ_1770692260423.png)
 
 ```json
 {
@@ -45,4 +48,4 @@ powershell -Command "$f='%USERPROFILE%\.claude.json';$j=Get-Content $f|ConvertFr
 }
 ```
 
-重启你的Claude Cli
+重启你的 Claude Cli
