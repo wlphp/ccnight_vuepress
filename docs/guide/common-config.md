@@ -27,7 +27,7 @@
 
 ### [软件下载](https://docs.packyapi.com/docs/ccswitch/#软件下载)
 
-WindowsMacOSLinux
+Windows/MacOSLinux
 
 1. 点击下载链接→[传送门](https://github.com/farion1231/cc-switch/releases/latest)←，进入CC-Switch的Github Release页面
 2. 鼠标滚动到最下方选择适合自己版本的安装包，windows系统推荐下载普通msi后缀的安装包进行安装
@@ -45,10 +45,48 @@ WindowsMacOSLinux
 
 ## [ Claude Code配置]
 
-```
-# Claude Code (Native install - recommended)
+## 安装步骤
+
+### 方案 1：原生安装（推荐）
+
+#### macOS / Linux / WSL
+使用官方安装脚本（一行命令）：
+```bash
 curl -fsSL https://claude.ai/install.sh | bash
 ```
+
+#### Windows PowerShell
+```powershell
+irm https://claude.ai/install.ps1 | iex
+```
+
+#### Windows CMD
+```cmd
+curl -fsSL https://claude.ai/install.cmd -o install.cmd && install.cmd && del install.cmd
+```
+
+### 方案 2：Homebrew 安装（macOS / Linux）
+
+如果你已安装 Homebrew：
+```bash
+brew install --cask claude-code
+```
+
+### 验证安装
+
+安装完成后，验证是否成功：
+```bash
+claude --version
+```
+
+输出示例：
+```
+Claude Code version X.X.X
+```
+
+---
+
+
 
 1. 打开你下载的CC Switch软件，你会看到如下图的初始界面
 

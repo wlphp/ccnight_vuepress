@@ -18,7 +18,7 @@
 <li>✅ 系统托盘快捷操作 - 通过托盘菜单快速切换</li>
 </ul>
 <h3 id="软件下载" tabindex="-1"><a class="header-anchor" href="#软件下载"><span><a href="https://docs.packyapi.com/docs/ccswitch/#%E8%BD%AF%E4%BB%B6%E4%B8%8B%E8%BD%BD" target="_blank" rel="noopener noreferrer">软件下载</a></span></a></h3>
-<p>WindowsMacOSLinux</p>
+<p>Windows/MacOSLinux</p>
 <ol>
 <li>
 <p>点击下载链接→<a href="https://github.com/farion1231/cc-switch/releases/latest" target="_blank" rel="noopener noreferrer">传送门</a>←，进入CC-Switch的Github Release页面</p>
@@ -36,10 +36,31 @@
 如果你有经验，能确认你的Nodejs环境以及cc、codex、gemini的cli安装没问题，配置目录也都存在，可以忽略这一步，直接进入以下的CC Switch配置</strong></p>
 <p>点击右侧传送门查看 <a href="">如何进行环境检查？</a></p>
 <h2 id="claude-code配置" tabindex="-1"><a class="header-anchor" href="#claude-code配置"><span>[ Claude Code配置]</span></a></h2>
-<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line"># Claude Code (Native install - recommended)</span>
-<span class="line">curl -fsSL https://claude.ai/install.sh | bash</span>
+<h2 id="安装步骤" tabindex="-1"><a class="header-anchor" href="#安装步骤"><span>安装步骤</span></a></h2>
+<h3 id="方案-1-原生安装-推荐" tabindex="-1"><a class="header-anchor" href="#方案-1-原生安装-推荐"><span>方案 1：原生安装（推荐）</span></a></h3>
+<h4 id="macos-linux-wsl" tabindex="-1"><a class="header-anchor" href="#macos-linux-wsl"><span>macOS / Linux / WSL</span></a></h4>
+<p>使用官方安装脚本（一行命令）：</p>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code class="language-bash"><span class="line"><span class="token function">curl</span> <span class="token parameter variable">-fsSL</span> https://claude.ai/install.sh <span class="token operator">|</span> <span class="token function">bash</span></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ol>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h4 id="windows-powershell" tabindex="-1"><a class="header-anchor" href="#windows-powershell"><span>Windows PowerShell</span></a></h4>
+<div class="language-powershell line-numbers-mode" data-highlighter="prismjs" data-ext="powershell"><pre v-pre><code class="language-powershell"><span class="line"><span class="token function">irm</span> https:<span class="token operator">/</span><span class="token operator">/</span>claude<span class="token punctuation">.</span>ai/install<span class="token punctuation">.</span>ps1 <span class="token punctuation">|</span> <span class="token function">iex</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h4 id="windows-cmd" tabindex="-1"><a class="header-anchor" href="#windows-cmd"><span>Windows CMD</span></a></h4>
+<div class="language-cmd line-numbers-mode" data-highlighter="prismjs" data-ext="cmd"><pre v-pre><code class="language-cmd"><span class="line">curl -fsSL https://claude.ai/install.cmd -o install.cmd &amp;&amp; install.cmd &amp;&amp; del install.cmd</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="方案-2-homebrew-安装-macos-linux" tabindex="-1"><a class="header-anchor" href="#方案-2-homebrew-安装-macos-linux"><span>方案 2：Homebrew 安装（macOS / Linux）</span></a></h3>
+<p>如果你已安装 Homebrew：</p>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code class="language-bash"><span class="line">brew <span class="token function">install</span> <span class="token parameter variable">--cask</span> claude-code</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="验证安装" tabindex="-1"><a class="header-anchor" href="#验证安装"><span>验证安装</span></a></h3>
+<p>安装完成后，验证是否成功：</p>
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh"><pre v-pre><code class="language-bash"><span class="line">claude <span class="token parameter variable">--version</span></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>输出示例：</p>
+<div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text"><pre v-pre><code class="language-text"><span class="line">Claude Code version X.X.X</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><hr>
+<ol>
 <li>
 <p>打开你下载的CC Switch软件，你会看到如下图的初始界面</p>
 <p>根据图片提示把请求地址和api key写好</p>
